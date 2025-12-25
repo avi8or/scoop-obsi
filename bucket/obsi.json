@@ -1,0 +1,28 @@
+{
+    "version": "0.3.4",
+    "description": "CLI for Obsidian note-taking with Quick Notes support",
+    "homepage": "https://github.com/avi8or/obsidian-cli-quick-notes",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.4/obsidian-cli-quick-notes_0.3.4_windows_amd64.tar.gz",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.4/obsidian-cli-quick-notes_0.3.4_windows_arm64.tar.gz",
+            "hash": ""
+        }
+    },
+    "bin": "obsidian-cli.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v$version/obsidian-cli-quick-notes_$version_windows_amd64.tar.gz"
+            },
+            "arm64": {
+                "url": "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v$version/obsidian-cli-quick-notes_$version_windows_arm64.tar.gz"
+            }
+        }
+    }
+}
